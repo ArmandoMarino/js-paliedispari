@@ -15,9 +15,6 @@ console.log ("JS OK");
 const number = document.getElementById("number");
 console.log (number);
 
-const pod = document.getElementById("pod");
-console.log(pod);
-
 button = document.getElementById("button");
 console.log(button)
 
@@ -32,8 +29,11 @@ function randomNumber(min,max){
 function podCheck(number){
     let result = '';
     if(number % 2 == 0) {
+        alert("Ha vinto il pari !")
         return result;
     }else {
+        alert("Ha vinto il dispari !")
+
         return result;
     }
 }
@@ -43,15 +43,13 @@ function podCheck(number){
 button.addEventListener("click", function(){
     const userNumber = parseInt(number.value);
     console.log(userNumber + ": userNumer");
-    const podUser = pod.value;
-    console.log(podUser);
 
     const randomNumberCpu = parseInt(randomNumber(1,5)) ;
-    console.log (randomNumberCpu);
+    console.log (randomNumberCpu +" RandomCPU");
     
     const sum = randomNumberCpu + userNumber;
     console.log(sum + "somma totale");
 
-   const sumCheck = podCheck(sum);
+   const sumCheck =  podCheck(sum);
    console.log(sumCheck);
 });
