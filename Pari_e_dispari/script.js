@@ -41,7 +41,7 @@ function podCheck(number){
 
 // ADD EVENT LISTENER SUL BOTTONE
 button.addEventListener("click", function(){
-    let userNumber = parseInt(number.value);
+    const userNumber = parseInt(number.value);
     console.log(userNumber + ": userNumer");
     const podUser = pod.value;
     console.log(podUser);
@@ -50,5 +50,8 @@ button.addEventListener("click", function(){
     console.log (randomNumberCpu);
     
     const sum = randomNumberCpu + userNumber;
-    console.log(sum);
+    console.log(sum + "somma totale");
+
+   const sumCheck = podCheck(sum);
+   console.log(sumCheck);
 });
