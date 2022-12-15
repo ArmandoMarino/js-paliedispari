@@ -12,10 +12,12 @@
 </head>
 <body>
     <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col -12 text-center my-4">
-                    <label class="my-4" for="number">Scegli pari o dispari e sfida il computer! :</label> <br>
+
+        <div class="container-fluid text-center">
+            <h1>PARI O DISPARI?</h1>
+            <div class="row ">
+                <div class="col-12 text-center my-4 ">
+                    <label class="my-4" for="number">Scegli pari o dispari e sfida il computer!:</label> <br>
                     <select class="p-2" id="number" name="number">
                         <option>1</option>
                         <option>2</option>
@@ -24,18 +26,26 @@
                         <option>5</option>
                     </select>
                 </div>
+                <div class="text-center">
+                    <button type="button" id="button" class="btn btn-primary my-4">Sfida!</button>
+                </div>
             </div>
         </div>
 
-        <div class="text-center">
-            <button type="button" id="button" class="btn btn-primary">Sfida!</button>
-        </div>
         
-        <div class="container text-center">
+        
+        <div class="container text-center my-4 card">
             <div class="row">
-                <div id="user-print" class="col-4"></div>
-                <div id="cpu-print" class="col-4"></div>
-                <div id="winner" class="col-12"></div>
+                <div id="user-print" class="col-6 ">
+                    <h5><i class="fa-solid fa-user me-3"></i>Numero del giocatore :</h5>
+                </div>
+                <div id="cpu-print" class="col-6">
+                    <h5><i class="fa-solid fa-laptop-code me-3"></i>Numero della CPU :</h5>
+                </div>
+                <div id="winner" class="col-12 my-4">
+                    <p><i class="fa-solid fa-xl fa-trophy"></i></p>
+                    <h5>Vincitore :</h5>
+                </div>
             </div>
         </div>
     </main>

@@ -38,11 +38,11 @@ function randomNumber(min,max){
 function podCheck(number){
     let result = '';
     if(number % 2 == 0) {
-        winnerPrint.innerHTML = "Ha vinto il pari !";
+        winnerPrint.innerHTML += "Ha vinto il pari !";
         // alert("Ha vinto il pari !")
         return result;
     }else {
-        winnerPrint.innerHTML = "Ha vinto il dispari !";
+        winnerPrint.innerHTML += "Ha vinto il dispari !";
         // alert("Ha vinto il dispari !")
         return result;
     }
@@ -60,9 +60,10 @@ button.addEventListener("click", function(){
     const sum = randomNumberCpu + userNumber;
     console.log(sum + "somma totale");
 
-    userPrint.innerHTML = userNumber;
-    cpuPrint.innerHTML = randomNumberCpu;
-
-    const sumCheck =  podCheck(sum);
+    userPrint.innerHTML += userNumber;
+    cpuPrint.innerHTML += randomNumberCpu;
+    
+    const sumCheck = podCheck(sum);
     console.log(sumCheck);
+    return
 });
