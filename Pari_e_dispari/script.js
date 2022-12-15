@@ -29,11 +29,11 @@ function randomNumber(min,max){
 function podCheck(number){
     let result = '';
     if(number % 2 == 0) {
+        
         alert("Ha vinto il pari !")
         return result;
     }else {
         alert("Ha vinto il dispari !")
-
         return result;
     }
 }
