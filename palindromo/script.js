@@ -17,9 +17,11 @@ console.log(button);
 
 // FUNZIONE REVERS A WORD
 function reverseWord (word){
-    let result = " ";
-    for ( let i = word.length - 1; i >= 0  ; i--)
-    result += word[i];
+    let result = ' ';
+    for ( let i = word.length - 1; i >= 0  ; i--){
+        result += word[i];
+    }
+    
     return result;
 }
 
@@ -27,11 +29,11 @@ button. addEventListener("click", function(){
     let userWord = name.value;
     console.log(userWord + "= userWord");
 
-    const userWordreverse = reverseWord(userWord);
+    let userWordreverse = reverseWord(userWord);
     console.log(userWordreverse + "= userwordreverse");
 
     
-    if(userWord = userWordreverse){
+    if(userWord === userWordreverse){
         alert("La tua parola è un Palindromo!");
     }else{
         alert("La tua parola NON è un Palindromo!")
