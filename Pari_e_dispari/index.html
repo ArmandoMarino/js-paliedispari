@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pari e Dispari</title>ù
+    <title>Pari e Dispari</title>
     <!-- FONTAWESOME -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- BOOTSTRAP -->
@@ -12,6 +12,32 @@
 </head>
 <body>
     <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col -6 text-center my-4">
+                    <label class="my-4" for="number">Scegli un numero da 1 a 5 :</label> <br>
+                    <select class="p-2" id="number" name="number">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="col-6 text-center my-4">
+                    <label class="my-4" for="pod">Scegli pari o dispari :</label> <br>
+                    <select class="p-2" id="pod" name="pod">
+                        <option>Pari</option>
+                        <option>Dispari</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" id="button" class="btn btn-primary">Sfida la CPU!</button>
+
+        </div>
         
     </main>
     <script src="script.js"></script>
